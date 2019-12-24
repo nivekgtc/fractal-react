@@ -7,8 +7,8 @@ import Beer from '../pages/Beer';
 
 const Routes = () => (
   <Switch>
-    <Route exact path="/" component={Home} />
-    <Route path="/beer" component={Beer} />
+    <Route path="/" exact component={Home} />
+    <Route path="/beer" exact component={Beer} />
   </Switch>
 );
 
