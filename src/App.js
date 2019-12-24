@@ -8,13 +8,14 @@ import './config/ReactotronConfig';
 import history from './services/history';
 import store from './store';
 import GlobalStyle from './styles/global';
+import Header from './components/Header';
 import Routes from './routes';
 
 function App() {
   return (
     <Provider store={store}>
-      {/* <Header /> */}
       <ConnectedRouter history={history}>
+        <Header />
         <Routes />
         <GlobalStyle />
       </ConnectedRouter>
