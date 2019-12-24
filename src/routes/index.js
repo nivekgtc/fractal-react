@@ -2,17 +2,14 @@ import React from 'react';
 
 import { Route, Switch } from 'react-router-dom';
 
-import { ConnectedRouter } from 'connected-react-router';
-import history from 'history';
-
 import Home from '../pages/Home';
+import Beer from '../pages/Beer';
 
 const Routes = () => (
-  <ConnectedRouter history={history}>
-    <Switch>
-      <Route exact path="/" component={Home} />
-    </Switch>
-  </ConnectedRouter>
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route path="/beer" component={Beer} />
+  </Switch>
 );
 
 export default Routes;

@@ -4,7 +4,7 @@ import { connectRouter, routerMiddleware } from 'connected-react-router';
 import createSagaMiddleware from 'redux-saga';
 import rootReducer from './ducks';
 
-import history from '../routes/history';
+import history from '../services/history';
 
 // Sagas
 import rootSaga from './sagas';
@@ -16,7 +16,7 @@ const sagaMonitor =
     ? console.tron.createSagaMonitor()
     : null;
 const sagaMiddlewares = createSagaMiddleware({
-  sagaMonitor
+  sagaMonitor,
 });
 
 middlewares.push(sagaMiddlewares);
