@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { connect } from 'react-redux';
 
-import { Container, BeerDetails } from './styles';
+import { Container } from './styles';
+import BeerDetails from '../../components/BeerDetails';
 
 function Beer(props) {
   const { beer } = props;
@@ -10,16 +11,11 @@ function Beer(props) {
   return (
     <Container>
       {beer && (
-        <BeerDetails>
-          <div>
-            <img width="100%" height="100%" src={beer.image_url} alt="Beer" />
-          </div>
-
-          <div>
-            <strong>{beer.name}</strong>
-            <span>{beer.tagline}</span>
-          </div>
-        </BeerDetails>
+        <BeerDetails
+          src={beer.image_url}
+          name={beer.name}
+          tagline={beer.tagline}
+        />
       )}
     </Container>
   );

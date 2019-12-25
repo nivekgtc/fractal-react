@@ -1,10 +1,29 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-export const Text = styled.p`
-  color: white;
-  text-align: center;
-  font: 14px;
+export const ListItem = styled.li`
+  display: flex;
+  width: 210px;
+  height: 290px;
+  margin: 40px;
+
+  flex-direction: column;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+`;
+
+export const Image = styled.img`
+  align-self: center;
+  max-width: 250px;
+`;
+
+export const Strong = styled.strong`
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  margin-top: 5px;
 `;
 
 export const BeerList = styled.ul`
