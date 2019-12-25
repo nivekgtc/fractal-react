@@ -14,7 +14,8 @@
 
 ### Como acessar o deploy
 
-[Fractal React - Clique para acessar]('https://fractal-react.web.app/')
+[Fractal React - Clique para acessar](https://fractal-react.web.app/)
+https://fractal-react.web.app/
 
 ###
 
