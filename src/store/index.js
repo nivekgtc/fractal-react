@@ -32,7 +32,7 @@ const enhancer =
     ? compose(console.tron.createEnhancer(), applyMiddleware(...middlewares))
     : applyMiddleware(...middlewares);
 
-const store = createStore(connectRouter(history)(rootReducer), composer);
+const store = createStore(connectRouter(history)(rootReducer), enhancer);
 
 sagaMiddlewares.run(rootSaga);
 

@@ -1,5 +1,14 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as Links } from 'react-router-dom';
+
+export const Link = styled(Links).attrs(props => ({
+  to: props.to,
+}))`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const Container = styled.header`
   display: flex;

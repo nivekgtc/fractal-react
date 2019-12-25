@@ -12,6 +12,10 @@
 - Prettier
 - Eslint
 
+### Como acessar o deploy
+
+[Fractal React - Clique para acessar]('https://fractal-react.web.app/')
+
 ### Bônus
 
 - Utilizado lib para rotas
